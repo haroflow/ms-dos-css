@@ -1,0 +1,194 @@
+* {
+	margin: 0;
+	padding: 0;
+	flex-shrink: 0;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+	padding: 20px;
+	border: 2px solid #AAAAAA;
+	margin-left: 4px;
+	margin-right: 4px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	border-bottom: none;
+	border-top: none;
+	overflow-y: auto;
+}
+
+.screen {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background: #0000AA;
+	color: #AAAAAA;
+	font-family: "Lucida Console";
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.menubar {
+	background: #AAAAAA;
+	display: flex;
+	color: #000000;
+	padding-left: 20px;
+}
+.menubar .menu-item {
+	padding: 1px 20px;
+	cursor: pointer;
+}
+.menubar .menu-item:hover {
+	background: #000000;
+	color: #AAAAAA;
+}
+.menubar .right {
+	display: flex;
+	flex-grow: 1;
+	justify-content: flex-end
+}
+
+.title {
+	z-index: 10;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+}
+.title hr {
+	border: 1px solid #AAAAAA;
+	flex-grow: 1;
+	align-self: center;
+}
+.title p {
+	background: #AAAAAA;
+	color: #0000AA;
+	padding: 0 15px;
+}
+
+hr.title {
+	z-index: 9;
+	height: 10px;
+	border: 2px solid #AAAAAA;
+	border-bottom: none;
+	margin: -10px 4px 0 4px;
+	margin-top: -10px;
+}
+
+.footer {
+	background: #00AAAA;
+	color: #000000;
+	padding: 1px 0;
+}
+
+
+.content::-webkit-scrollbar {
+    width: 13px;
+}
+ 
+.content::-webkit-scrollbar-track {
+	background: #999999;
+}
+ 
+.content::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  height: 20px;
+}
+.content::-webkit-scrollbar-button {
+	background-color: #AAAAAA;
+	height: 25px;
+}
+
+.menu {
+	display: none;
+}
+.menubar .menu-item:hover .menu {
+	display: block;
+	z-index: 11;
+	background: #AAAAAA;
+	position: absolute;
+	margin-left: -20px;
+	margin-top: 1px;
+	color: #000000;
+	box-shadow: 20px 20px 0 #000000;
+	padding: 0;
+	min-width: 220px;
+}
+.menu .menu-content {
+	border: 2px solid #000000;
+	margin: 10px 6px;
+	padding: 10px 6px;
+}
+.menu .menu-content p {
+	padding: 1px 6px 1px 10px;
+}
+.menu .menu-content p:hover {
+	background: #000000;
+	color: #AAAAAA;
+}
+.menu .menu-content hr {
+	border: 1px solid #000000;
+	margin: 10px -6px;
+}
+
+.content2 {
+	padding: 20px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	border-bottom: none;
+	border-top: none;
+	overflow-y: auto;
+}
+
+input {
+	border: none;
+	outline: none;
+	padding: 2px;
+	background: #AAAAAA;
+	font-family: "Lucida Console";
+	font-weight: bold;
+	font-size: 20px;
+}
+
+input.t2 {
+	border: none;
+	outline: none;
+	background: none;
+	color: #EEEE40;
+	padding: 2px;
+	font-family: "Lucida Console";
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.form-group {
+	margin: 6px 0;
+}
+
+.panel {
+	padding: 10px 20px;
+	border: 2px solid #AAAAAA;
+}
+
+.data {
+	color: #EEEE40;
+}
+
+.center {
+	justify-content: center;
+}
+.center-x {
+	align-items: center;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+}
