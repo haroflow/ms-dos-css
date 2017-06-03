@@ -85,19 +85,19 @@ hr.title {
 }
 
 
-.content::-webkit-scrollbar {
+.scroll-content::-webkit-scrollbar {
     width: 13px;
 }
  
-.content::-webkit-scrollbar-track {
+.scroll-content::-webkit-scrollbar-track {
 	background: #999999;
 }
  
-.content::-webkit-scrollbar-thumb {
+.scroll-content::-webkit-scrollbar-thumb {
   background-color: #000000;
   height: 20px;
 }
-.content::-webkit-scrollbar-button {
+.scroll-content::-webkit-scrollbar-button {
 	background-color: #AAAAAA;
 	height: 25px;
 }
@@ -191,4 +191,30 @@ input.t2 {
 .row {
 	display: flex;
 	flex-direction: row;
+}
+
+.title-border {
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 1;
+	padding: 0 5px;
+}
+.title-border .title {
+	background: #AAAAAA;
+	color: #0000AA;
+	align-self: center;
+	padding: 0 10px;
+}
+.title-border .container {
+	display: flex;
+	border: 2px solid #AAAAAA;
+	border-bottom: none;
+	flex-shrink: 1;
+	margin-top: -10px;
+	padding: 10px 0px 0 5px;
+}
+.scroll-content {
+	overflow: auto;
+	flex-shrink: 1;
+	padding: 5px;
 }
